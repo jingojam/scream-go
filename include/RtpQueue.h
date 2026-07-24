@@ -55,7 +55,7 @@ public:
 	bool used;
 };
 
-const int kRtpQueueSize = 1024;
+const int kRtpQueueSize = 4096;
 class RtpQueue : public RtpQueueIface {
 public:
 	RtpQueue();

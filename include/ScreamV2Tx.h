@@ -67,7 +67,7 @@ extern "C" {
 
   // Stream related default parameters
   // Max RTP queue delay, RTP queue is cleared if this value is exceeded
-  static const float kMaxRtpQueueDelay = 0.1;  // 0.1s
+  static const float kMaxRtpQueueDelay = 1.0;  // 0.1s
   // Headroom for packet pacing
   static const float kPacketPacingHeadRoom = 1.5f;
   // Bytes in flight headroom
