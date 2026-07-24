@@ -15,6 +15,7 @@ import (
 	"runtime/cgo"
 	"time"
 	"unsafe"
+	"fmt"
 )
 
 // Tx implements the sender side of SCReAM
@@ -26,6 +27,7 @@ type Tx struct {
 
 // NewTx creates a new Tx instance.
 func NewTx() *Tx {
+	fmt.Println("RUNNING FORK\n")
 	return &Tx{
 		screamTx: C.ScreamTxInit(),
 		pinner:   &runtime.Pinner{},
